@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>Finanças</title>
+</head>
+
+<body>
+
+  <h1 class="titulo">Controle de gastos</h1>
+
+  <div class="container">
+
+    <section>
+      <h4>Saldo atual:</h4>
+
+      <h1 id="balance" class="balance">R$ 0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Receitas</h4>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Despesas</h4>
+          <p id="money-minus" class="money minus">- R$0.00</p>
+        </div>
+      </div>
+
+      <h3>Transações</h3>
+
+      <ul id="transactions" class="transactions"></ul>
+    </section>
+
+    <section>
+      <h4>Adicionar transação</h4>
+
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nome</label>
+          <input autofocus type="text" id="text" placeholder="Nome da transação" />
+          <small class="hidden">*Coloque um titulo</small>
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Valor <br/>
+            <small >(Numeros negativos para despesas)</small>
+          </label>
+          <input type="number" id="amount" placeholder="Valor da transação" />
+          <small class="hidden">*Coloque um número</small>
+        </div>
+
+        <button class="btn">Adicionar</button>
+      </form>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
