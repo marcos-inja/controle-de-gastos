@@ -91,15 +91,7 @@ const cleanInputs =() => {
     inputTransactionAmount.value = ''
 }
 
-const handleFormSubmit = event => {
-    event.preventDefault()
-
-    const transactionName = inputTransactionName.value.trim()
-    const transactionAmount = inputTransactionAmount.value.trim()
-    const isSomeInputEmpy = transactionName === '' && transactionAmount === ''
-    const isNameinputEmpy = transactionName === ''
-    const isAmountInputEmpy = transactionAmount === ''
-
+const verificationInputs = (isSomeInputEmpy, isNameinputEmpy, isAmountInputEmpy) => {
     if(isSomeInputEmpy){
         smallVisiblity[0].classList.add('visible')
         smallVisiblity[1].classList.add('visible')
@@ -113,10 +105,25 @@ const handleFormSubmit = event => {
         smallVisiblity[1].classList.add('visible')
         return
     }
+}
 
+const visiblity = () => {
     smallVisiblity[0].classList.remove('visible')
     smallVisiblity[1].classList.remove('visible')
+}
 
+const handleFormSubmit = event => {
+    event.preventDefault()
+
+    const transactionName = inputTransactionName.value.trim()
+    const transactionAmount = inputTransactionAmount.value.trim()
+    const isSomeInputEmpy = transactionName === '' && transactionAmount === ''
+    const isNameinputEmpy = transactionName === ''
+    const isAmountInputEmpy = transactionAmount === ''
+
+    verificationInputs()
+
+    visiblity()
     addTransactionArray(transactionName,transactionAmount)
     init()
     updateLocalStorage()
@@ -124,4 +131,3 @@ const handleFormSubmit = event => {
 }
 
 form.addEventListener('submit', handleFormSubmit)
- 
