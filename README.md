@@ -1,2 +1,2 @@
 # Controle de finanças
-*EM CONTRUÇÃO
+*EM CONSTRUÇÃO
