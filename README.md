@@ -1,2 +1,2 @@
-# Controle de finanças
+# Controle de gastos
 *EM CONSTRUÇÃO
