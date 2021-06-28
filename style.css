@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --border-radius: 0 5px 5px 5px;
 }
 
@@ -16,16 +15,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   min-height: 100vh;
   margin: 0;
 }
 
 .container {
   margin: 30px auto;
-  /* width: 350px; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   
@@ -67,7 +62,6 @@ h4 {
 
 .inc-exp-container {
   background-color: #fff;
-  
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -101,7 +95,6 @@ h4 {
 
 label {
   display: inline-block;
-  /* margin: 10px 0; */
 }
 
 /* transação */
@@ -152,19 +145,6 @@ input[type=number]::-webkit-outer-spin-button {
 -webkit-appearance: none; 
 margin: 0; 
 }
-/*  */
-/* .btn {
-  cursor: pointer;
-  background-color: #2e75cc;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
-  padding: 10px;
-  width: 100%;
-} */
 
 .delete-btn:focus {
   outline: 0;
@@ -178,7 +158,6 @@ margin: 0;
 
 .transactions li {
   background-color: #E0ECFF;
-  /* box-shadow: var(--box-shadow); */
   color: #0D114F;
   display: flex;
   justify-content: space-between;
