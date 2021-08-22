@@ -1,4 +1,3 @@
-Ideia pega [*aqui*](https://github.com/Roger-Melo/controle-de-despesas)
 # Controle de gastos
 Feito com JavaScript puro! <br>
 Resultado pode ser visto aqui: https://marcos-inja.github.io/controle-de-gastos/
